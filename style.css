@@ -1,0 +1,141 @@
+/* ===============================
+   ✅ EduPins Stylesheet (Beginner-friendly)
+   Uses ONLY: colors, background,
+   box model, text styling, selectors,
+   simple positioning, inline-block layout
+   =============================== */
+
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* GLOBAL */
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(180deg, #f6f8ff, #eef3ff);
+  color:#0a1a33;
+  min-height:100vh;
+  position:relative;
+  padding-bottom:70px;
+}
+
+/* HEADER */
+.header{
+  background:white;
+  border:1px solid #dde3ff;
+  padding:15px;
+  border-radius:10px;
+  margin:10px;
+  position:sticky;
+  top:8px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.logo{
+  font-size:26px;
+  font-weight:bold;
+  color:#6a35d6;
+  display:inline-block;
+}
+
+/* NAV */
+nav{
+  display:inline-block;
+  margin-left:15px;
+}
+nav a{
+  color:#373f50;
+  text-decoration:none;
+  padding:8px 12px;
+  margin-right:6px;
+  border-radius:6px;
+}
+nav a:hover{
+  background:#dedefc;
+  color:#6a35d6;
+}
+
+/* PAGE TITLES */
+h1{
+  margin:18px 20px;
+  font-size:24px;
+}
+
+/* PIN CARDS */
+.pin-box{
+  width:230px;
+  display:inline-block;
+  vertical-align:top;
+  background:white;
+  border-radius:12px;
+  margin:12px;
+  border:1px solid #dee3ff;
+  padding-bottom:8px;
+  box-shadow:0 6px 16px rgba(0,0,0,0.08);
+}
+.pin-box img{
+  width:100%;
+  height:auto;
+  border-radius:12px 12px 0 0;
+}
+.pin-box:hover{
+  border-color:#6a35d6;
+  box-shadow:0 8px 22px rgba(106,53,214,0.30);
+}
+.pin-box p{
+  padding:10px;
+  font-size:14px;
+}
+
+/* FORM */
+form{
+  background:white;
+  padding:18px;
+  border-radius:10px;
+  margin:20px;
+  border:1px solid #dde3ff;
+}
+label{
+  display:block;
+  margin-top:10px;
+  font-weight:bold;
+}
+input, textarea, select{
+  width:100%;
+  padding:7px;
+  margin-top:6px;
+  border-radius:6px;
+  border:1px solid #ccc;
+}
+textarea{height:100px}
+
+/* BUTTONS */
+.btn{
+  display:inline-block;
+  text-decoration:none;
+  background:#6a35d6;
+  color:white;
+  padding:8px 14px;
+  border-radius:8px;
+  margin-top:10px;
+}
+.btn:hover{
+  background:#5729b3;
+}
+
+/* FOOTER (always bottom) */
+footer{
+  background:#ffffff;
+  border-top:1px solid #dce3ff;
+  text-align:center;
+  padding:12px;
+  width:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  font-size:14px;
+  color:#6e6e6e;
+}
